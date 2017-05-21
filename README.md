@@ -1,4 +1,6 @@
-This is a clone of [Express & mongoose REST API Boilerplate in ES6 with Code Coverage](https://github.com/KunalKapadia/express-mongoose-es6-rest-api). This implementation extends it to include CRUD functionality for a client based on the [@ngrx example application](https://github.com/ngrx/example-app). The client project can be found [here](https://github.com/richjava/ngrx-example-app-ext)
+This is a clone of [Express & mongoose REST API Boilerplate in ES6 with Code Coverage](https://github.com/KunalKapadia/express-mongoose-es6-rest-api). This implementation extends it to include CRUD functionality for a client based on the [@ngrx example application](https://github.com/ngrx/example-app). The client project can be found [here](https://github.com/richjava/ngrx-example-app-ext). 
+
+To use it with the front end application, you'll need to first add some Schools. An easy way to do this is to start the app and use [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) to send a POST request to localhost:4040/api/schools with params for "name" and "description" (be sure to check the "x-www-form-urlencoded" radio button).
 
 # Express & mongoose REST API Boilerplate in ES6 with Code Coverage [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
