@@ -5,11 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Launch",
+            "type": "node2",
+            "program": "${workspaceRoot}/index.js",
+            "stopOnEntry": false,
             "request": "launch",
+            "diagnosticLogging": true,
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node.cmd",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "dev"
+            },
+            "console": "internalConsole",
             "sourceMaps": true,
-            "name": "Launch Program",
-            "program": "${workspaceRoot}\\index.js"
+            "webRoot": "${workspaceRoot}",
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${workspaceRoot}/*"
+            },
+            "outFiles": [
+                "${workspaceRoot}/dist/server/**/*.js"
+            ]
         }
     ]
 }
